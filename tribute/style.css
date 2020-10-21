@@ -1,0 +1,139 @@
+body {
+    background-color: black;
+    height:100%;
+    padding:0;
+    margin:0;
+  }
+  #image {
+    height: 200px; 
+    border-width: 8px;
+    border-style: solid;
+    border-color: gold;
+    border-radius: 50%;
+    display: block;
+    margin: auto; 
+  }  
+  #silver-background {
+    background-color: silver; 
+    background-size: 100 , 50;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 50px;
+    border-bottom: initial;
+  } 
+  #img-caption , .gigi-bio {
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+    color: whitesmoke;
+  }
+    #tribute-link  {
+    text-align: center;
+  }
+  #title-one , #title-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gold;
+    background-color: purple;
+    border-style: solid;
+    padding: 5px;
+    padding-left: 1000px; 
+  }
+    #image-one , #image-two {
+    height: 200px; 
+    border-width: 2px;
+    border-style: solid;
+    border-color:gold;
+    }
+    #title {
+      background-color: gold;
+      color:black;
+      text-align: center; 
+      margin-bottom: 20px;
+    }
+    #image-one {
+      display: flex;
+      flex-grow: 4;
+    }
+    #gigi-bryant {
+      border-width: 5px;
+      border-color: gold;
+      border-style: solid;
+      display: block;
+      margin: auto; 
+    }
+    .nba {
+      color: gold;
+      position: relative;
+      bottom: 70px;
+      left: 5px;
+      font-size: 30px;
+    }  
+    .wnba {
+      color: gold;
+      position: relative;
+      bottom: 55px;
+      left: 5px;
+      font-size: 30px;
+    }
+    .achievment {
+      font-size: xx-large;
+      text-align: center;
+      padding: 50px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: darkgoldenrod;
+      background-color: black;
+      margin-left: 190px;
+      margin-right: 210px;
+      border-radius: 25%;
+    }
+    .left-ach {
+      font-family: monospace;
+      font-size: 20px;
+    }
+    .center-ach {
+      font-family: monospace;
+      font-size: 20px;
+      position: relative;
+      left: 500px;
+      bottom: 120px;
+    }
+    .right-ach {
+      font-family: monospace;
+      font-size: 20px;
+      position: relative;
+      left: 1000px;
+      bottom: 230px;
+    }
+    .twenty-four {
+      color: black;
+      position: relative;
+      left: 10px;
+      bottom: 60px;
+      font-size: 30px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .eight {
+      color:black;
+      position: relative;
+      left: 1285px;
+      bottom: 60px;
+      font-size: 30px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+      h3 {
+       color:white; 
+       text-align: center; 
+       margin: 0; 
+       padding-bottom:20px;
+      }
+      #main {
+        margin: 0;
+      }
+      footer {
+        color: ivory;
+        text-align: center;
+      }

@@ -1,0 +1,30 @@
+form syntax
+<form action="url" methd="get">
+	<p></p> 
+</form> 
+
+get - retrieving data, processing data info url 
+post - uploading file, inserting information 
+
+form structure
+
+input type="text">	- single line text input field 
+input type="radio">	- selecting one of many choices 
+input type="submit">	- for submitting form  
+
+form controls 
+
+<form> 
+	<label>Name: 
+		<input type="text" name="name" size="20">
+	</label>
+</form> 
+
+text area - is multiline 
+
+<form>
+ <label for="password">PIN Number: </label> 
+<input type= 	
+
+site 
+developer.mozilla.org
