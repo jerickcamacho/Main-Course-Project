@@ -1,0 +1,182 @@
+    /*HEADER AND BODY*/
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+body 
+{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#back-color 
+{
+    background-color: gray;
+}
+#nav-bar a:hover {
+    background-color:gray;
+  }
+#nav-bar 
+{
+    overflow: auto; 
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 40px;
+    margin-right: 170px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    border-radius: 10%;
+    background-color: black; 
+}   
+#nav-bar a
+{
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    float: left;
+}
+    #header-img 
+    {
+        height: 250px;
+        padding-left: 200px;
+    }
+    #main-header 
+    {
+        font-family: monospace;
+        text-align: right;
+        font-weight: bold;
+        font-size: 25px;
+        color: black;
+    }
+
+    /*SECTION*/
+#video {width:350px; height:300px; overflow:hidden; position:relative; right: 490px; float:right;}
+#video img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;} 
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+#video img:nth-child(4){animation-delay:0s;}
+#video img:nth-child(3){animation-delay:5s;}
+#video img:nth-child(2){animation-delay:10s;}
+#video img:nth-child(1){animation-delay:15s;} 
+
+/*FOOTER SECTION*/
+#about 
+    {
+        border: solid;
+        margin-top: 450px;
+        margin-right: 900px;
+        font-family: monospace;
+        text-align: center;
+    }
+#products
+    {
+        text-align: center;
+        border: solid;
+        position: relative;
+        bottom: 210px;
+        margin-left: 450px;
+        margin-right: 400px;
+        padding-bottom: 48px;
+    }
+    #contact header 
+    {
+      font-size: x-large;  
+      color: blanchedalmond;
+      font-weight: bold;
+      position: relative;
+      left: 650px;  
+      top: 65px;
+      margin-top: 450px; 
+    }
+   #name, #contact-number, #email 
+    {   
+        color: whitesmoke;
+        margin-bottom: 5px;
+        position: relative;
+        top: 60px
+    }
+    #form 
+    {
+        position: relative;
+        left: 450px;
+        border: solid;
+        border-style: solid;
+        border-radius: 5%;
+        border-color: firebrick;
+        padding-left: 130px;
+        margin-right: 900px;
+        margin-top: 20px;
+    }
+    #contact-number 
+    {
+        position: relative;
+        right: 70px;
+    }
+    #text-area 
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 50px;
+        margin-top: 60px;
+        color: white;
+    }
+    #sub 
+    {   
+        margin-top: 10px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 45px;
+        background-color: green;
+        color: whitesmoke;
+    }
+    #mycontact , .email .mynumber 
+    {  
+    font-size: x-large;    
+    color: whitesmoke;    
+    position: relative;
+    left: 500px;
+    margin: 20px;    
+    margin-top: 40px;
+    }
+    #mycontact img 
+    {
+        max-width: 20px;
+        margin-right:10px;
+    }
+    .telephone 
+    {
+        position: relative;
+        left: 35px;
+    }
+    #container 
+    {
+        background-color: black;
+    }
+    #foot 
+    {
+        background-color: black;
+        color: whitesmoke;
+        text-align: center;
+        position: relative;
+    }
+    #contact-header 
+    {
+        color: whitesmoke;
+        position: relative;
+        left: 600px;
+        margin-top: 20px;
+    }
+    #google-map 
+    {
+        position: static;
+        margin-left: 150px;
+    }
+    #address 
+    {
+        color: whitesmoke;
+    }
