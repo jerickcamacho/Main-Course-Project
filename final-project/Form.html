@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body >
+  <section id="container">
+  <!--User #7-#12-->
+    <div class="container-form"></div>
+      <form  id="form" onSubmit="return validateForm()" action="submit-output.html">
+          <header>Registration Form</header>
+           <div class="container-name"> 
+           <label id="row-name"><strong><em>Name</em></strong></label>
+           <input type="text" name="name" id="name" placeholder="Enter your name"  required> 
+          </div>
+           
+           <div class="container-number">
+           <label id="row-number"><strong><em>Contact Number</em></strong></label>
+           <input type="number" name="number" id="number" placeholder="Enter your contact number" required> 
+           <br>
+          </div>  
+
+          <div class="container-email">
+           <label id="row-email"><strong><em>Email</em></strong></label>
+           <input type="text" name="email" id="email" placeholder="Enter your email address" required> 
+          </div>    
+
+          <div class="container-birthdate">
+            <label id="row-birthdate"><strong><em>Birthday</em></strong></label>
+            <input type="text" name="birthdate" id="birthdate" placeholder="Enter your birthday" required> 
+          </div> 
+           
+          <div class="container-Home-address">
+            <label id="row-Home-address"><strong><em>Home Address</em></strong></label>
+            <input type="text" name="Home-address" id="Home-address" placeholder="Enter your home address" required> 
+          </div>   
+
+         <br> 
+         <input class="reset" type="reset" value="Clear">
+            <div>
+            <a href="C:\Users\User1\Desktop\html-basics\Main-Course-Project\final-project\submit-output.html"> 
+            <button id="sub" onclick="myOnClickFn()" onSubmit= "return validateForm()" ><strong>Submit</strong></button>
+
+            <script>
+                function myOnClickFn(){
+                document.location.href="submit-output.html";
+                }
+            </script> 
+            </a>
+            </div>
+        </form>
+        </div>
+</section>
+  <footer class="avion-logo">
+  <a href="C:\Users\User1\Desktop\html-basics\Main-Course-Project\final-project\Avion-LandingPage.html"> 
+    <img onclick="myOnClickFn()" src="image/avion_logo-form.png" alt="Avion Logo 2"  width="25%"; >   
+  </a>  
+</body>
+</html>

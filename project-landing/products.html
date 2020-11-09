@@ -1,22 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
+    <link rel="stylesheet" href="products.css">
 </head>
 <body>
-    <article>
-    <div id="container"></div>
-    <div id="products">
-     <h2><strong> Our Products</strong></h2>
-       <ul>
-          <li>Computer Desktop</li>
-          <li>Laptop</li>
-          <li>Computer Software Applications</li>
-          <li>Computer Peripherals</li>
-       </ul>
-    </div>
-    </article>
+    
+  <nav id="nav-bar">              
+    <!--User Story #4 id="nav-link"-->  
+    <!--Use Story #1 id="header"-->
+        <header>
+          <h1 class="logo"><strong> J & C </strong></h1>
+        </header>
+        <img id="header-img" src="Image/logo_final.jpg" alt="Mylogo">
+    <li><a href="project_landing.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a class="active" href="products.html">Products</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="#contact">Contact Us</a></li>       
+   </nav>
+
+    <div class="dropdown">
+        <h1 id="products-header"> Our Products</h1>
+        <button onclick="myFunction()" class="dropbtn">Products</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#desktops">Desktops</a>
+          <a href="#laptops">Laptops</a>
+          <a href="#software-applications">Software Applications</a>
+          <a href="#pc-games">PC Games</a>
+       </div>
+      
+     <!--details to desktops-->
+     <h1 id="desktops-header"> Desktops</h1>
+
+       <!--Brand Names-->  
+       <nav id="desktop-brands">
+       <li><a class="acer" href="#acer">Acer</a></li>
+       <li><a class="active"href="#all">All</a></li>
+       <li><a class="lenovo" href="#lenovo">Lenovo</a></li>
+       </nav>
+
+     <div id="desktops">  
+            <div class="row">
+                <div class="column">
+                  <img class="aspire-Z-24" src="img/brands/acer6.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                  <a class="specs" href="https://www.acer.com/ac/en/IL/content/model/DQ.BCBET.003">Specifications</a>
+                
+                  <img class="desktopAcer" src="img/brands/desktopAcer.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+                  <a class="specs-desktopAcer" href="https://www.acer.com/ac/en/PH/content/professional-model/DT.VDKSP.003">Specifications</a>
+                
+                </div>
+          
+                
+                <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:100%">
+                    <div id="imgtext"></div>
+                  </div>
+                  
+                  <script>
+                  function myFunction(imgs) {
+                    let expandImg = document.getElementById("expandedImg");
+                    let imgText = document.getElementById("imgtext");
+                    expandImg.src = imgs.src;
+                    imgText.innerHTML = imgs.alt;
+                    expandImg.parentElement.style.display = "block";
+                  }
+                  </script>
+
+      <!--JAVASCRIPT-->
+      <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            let dropdowns = document.getElementsByClassName("dropdown-content");
+            let i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
 </body>
 </html>

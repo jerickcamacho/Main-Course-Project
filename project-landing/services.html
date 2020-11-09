@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+       * {
+         box-sizing: border-box;
+         text-decoration: none;
+        }
+        body{font-family: montserrat; width: 100%; height: 100%;}
+        header, h1{font-family: monospace; text-align: right; font-weight: bold; font-size: 25px; padding: 0 100px; color: whitesmoke;}
+        h1, body, header{margin: 0;padding: 0;border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+ /* Navigation*/
+ #nav-bar, .container
+    {   
+    width: 100%;
+    height: 80px;
+    overflow: auto; 
+    display: flex;
+    justify-content: space-around;
+    list-style: none; 
+    background-color: black; 
+    position:fixed;
+    top:0;
+    left:0;
+    }    
+    #nav-bar , .container li
+    {
+    float: right;
+    margin-right: 20px;
+    }
+    #nav-bar li a 
+    {
+    color: whitesmoke;
+    font-size: 12px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    }
+    #nav-bar li 
+    {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    }
+    header h1.logo 
+    {
+    white-space: nowrap;  
+    margin-top: 25px;
+    font-size: 30px;
+    margin-left: 80px;
+    font-weight: bold;
+    color: darkturquoise;
+    }
+    #nav-bar a:hover {
+    background-color:gray;
+    }
+    a.active, a:hover 
+    {
+    background-color: gray;
+    transition: .5s;
+    }
+    #header-img 
+    {
+    margin-top: 20px;
+    height: 40px;
+    padding-left: 40px;
+    position: relative;
+    right: 680px;
+    }
+    </style>
+</head>
+<body>
+    <!-- Home --> 
+         <!--User Story #3 id="nav-bar"-->  
+         <nav id="nav-bar">              
+            <!--User Story #4 id="nav-link"-->  
+            <!--Use Story #1 id="header"-->
+            <div class="col-1 container">
+            <header>
+             <h1 class="logo"><strong> J & C </strong></h1>
+            </header>
+                <img id="header-img" src="Image/logo_final.jpg" alt="Mylogo">
+            <li><a href="project_landing.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a class="active" href="services.html">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>    
+          </div>   
+          </nav>
+</body>
+</html>

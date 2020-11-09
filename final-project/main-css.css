@@ -1,0 +1,301 @@
+    *{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+    body{
+    font-family:montserrat;
+    width: 100%; 
+    height: 100%;
+  /*  background-image: url(https://cdn.dribbble.com/users/226242/screenshots/14500775/media/1ea13f4b1edff121d8a131570b86cf75.png); */   
+  /*  background-color: #050612; */   
+}
+header, h1{
+    font-family: monospace; 
+    text-align: right; 
+    font-weight: bold; 
+    font-size: 25px; 
+    padding: 0 100px; 
+    color: whitesmoke;
+}
+header, h1, body, footer{
+    margin: 0;
+    padding: 0;
+    border: 0; 
+    font-size: 100%; font: inherit; vertical-align: baseline;
+} 
+header img{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    transform: translateX(270%);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/*NAVIGATION start*/ 
+#nav-option{ 
+    margin-top: 35px;
+}
+.navigation #nav-option{ 
+    background-color: white;
+    height: 110px;
+    padding-top: 0px;
+}
+.options ul{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 1px;
+    font-size: 20px;
+}
+.options ul li a{
+    margin: 10px;
+    margin-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+    top: 5px;
+    color: black;
+}
+.options ul li a.enroll{
+    background-color: dimgray;
+    padding: 5px;
+    padding-right: 20px;
+    border-radius: 20%;
+    color: azure;
+    display: flex;
+    align-items: center;
+    transform: translateY(-50%);
+}
+/*(Start)Media Query for Navigation Section*/
+@media (max-width: 375px){
+header img{
+    transform: none;
+    margin-left: 95px;
+    margin-right: 95px;
+    margin-bottom: 0px ;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.navigation #nav-option{ 
+    background-color: white;
+    height: 10px;
+    padding-top: 0px;
+}
+.options ul li a{
+    margin: 5px;
+    margin-left: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px; 
+    top: 110px;
+    color: black;
+}
+.options ul{
+    margin: 0px;
+    font-size: 10px;
+    top: 10px;
+    transform: translateY(-120%);
+}
+.options ul li a.enroll{
+    padding: 0px;
+    background-color: white;
+    color: black;
+}
+}
+/*(END)Media Query for Navigation Section*/
+/*---------------------------------------*/
+/*hover Navigation*/
+.options a:hover{
+    background-color: #17263E;
+    color: white;
+}
+.options a.enroll:hover{
+    background-color: #C60101;
+}
+/*Section Container*/
+.row-one h1{ 
+    color: #D1E1F9;
+    font-weight: bold;
+    text-align: left;
+    border: solid;
+    background-color:#302F34;
+    height: 450px;
+    position: relative;
+    top: 20px;
+    bottom: 90px;
+    border: 0;
+    padding-left: 80px;
+    padding-top: 70px;
+    font-size: 40px;
+}
+.row-two span{
+    color:#FEF2E4;
+    font-size: 20px;
+    position: relative;
+    left: 80px;
+    bottom: 310px;
+}
+.row-three{
+    color: #D1E1F9;
+    font-size: 16px;
+    margin-right: 920px;
+    position: relative;
+    left: 80px;
+    bottom: 300px;   
+}
+.image-one img{
+    position: relative;
+    left: 900px;
+    bottom: 500px;
+    border:  .5px solid #D1E1F9;
+    border-radius: 15%;
+}
+/*Enroll button*/
+#sub{
+    background-color:#D1E1F9 ;
+    color: #17263E;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    left: 80px;
+    bottom: 580px;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20%;
+}
+/*hover enroll button*/
+#sub:hover{
+    background-color:#3B5299;
+    color: white;
+}
+/*media query h1*/
+@media (max-width: 375px){
+.row-one h1{
+    font-size: 16px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.row-two span{
+    font-size: 12px;
+    left: 10px;
+    bottom: 380px;
+}
+.row-three{
+    font-size: 12px;
+    left: 10px;
+    bottom: 370px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+}
+.image-one img{
+    width: 180px;
+    height: 150px;
+    left: 100px ;
+    bottom: 460px;
+}
+#sub{
+    left: 120px;
+    bottom: 450px;
+}
+}
+/*END of media query h1*/
+/*--------------------*/
+/*Article Section*/
+.image-two img{
+    position: relative;
+    top: 550px;
+    left: 100px;
+}
+#about h2.article-header{
+    color:#17263E; 
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    justify-content:space-around;
+    transform: translateY(500%);
+    margin: 20px;
+    margin-bottom: 0px;
+    margin-left: 450px;
+    margin-right: 250px;
+    padding-left: 150px;
+}
+#about p{
+    color:#17263E;
+    font-size: 20px;
+    transform: translateY(200%);
+    margin-right: 200px;
+    margin-left: 430px;
+    padding-left: 200px;
+}
+/*media query h1*/
+@media (max-width: 375px){
+.image-two img{
+   width: auto;
+   top: 500px;
+   left: 100px;
+   height: 180px;
+} 
+#about p{
+   font-size: 12px;
+   transform: translateY(400%);
+   text-align: center;
+   margin-left: none;
+   margin-right: none;
+   padding: none; 
+}
+#about h2.article-header{
+    color: #17263E;
+ /* font-weight: bold; */
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(1350%);
+    margin: 0px;
+    margin-top: 40px;
+    /* margin-bottom: 0px; */
+    /* margin-left: 450px; */
+    /* margin-right: 250px; */
+    padding:0px;         
+}
+#about p{
+    transform: translateY(820%);
+    font-size: 12;  
+    padding: 0px;
+    margin-right: 0px; 
+    margin-left: 0px;     
+}
+}
+/*END of media query h1*/
+
+/*About Container*/
+.container-one li{
+    color: #17263E;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(600%);
+    position: relative;
+    left: 170px;
+    border: 1px solid;
+    box-shadow: 5px 10px maroon;
+    padding:10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 20px;
+}
+
+
+
+

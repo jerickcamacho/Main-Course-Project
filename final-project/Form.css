@@ -1,0 +1,140 @@
+#form{
+    transform: translateX(400px);
+    max-width: 200px;
+    background-color:#17263E ;
+    border: solid;
+    border-style: solid;
+    border-radius: 5%;
+    border-color: firebrick;
+    padding: 10%;
+    height: 400px;
+}
+#form header{
+    color:#D1E1F9 ;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    bottom: 90px;
+}    
+#name{
+    padding-left:45px; 
+    font-size: 20px; 
+    transform: translateY(-270%); 
+    margin-bottom: 20px; position: relative; 
+    right: 60px; 
+} 
+#row-name{
+    color:#FEF2E4;
+    font-size: 20px; 
+    position: relative; 
+    bottom: 80px; 
+    right:60px;
+}
+
+#number{
+    padding-left:45px; 
+    font-size: 20px; 
+    transform: translateY(-270%); 
+    margin-bottom: 20px; position: relative; 
+    right: 60px;
+}
+#row-number{
+    color:#FEF2E4;
+    font-size: 20px; 
+    position: relative; 
+    bottom: 80px; 
+    right:60px;
+}
+
+#email{
+    padding-left:45px; 
+    font-size: 20px; 
+    transform: translateY(-270%); 
+    margin-bottom: 20px; 
+    position: relative; 
+    right: 60px;
+}
+#row-email{
+    color:#FEF2E4;
+    font-size: 20px; 
+    position: relative; 
+    bottom: 80px; 
+    right:60px;
+}
+
+#birthdate{
+    padding-left:45px; 
+    font-size: 20px; 
+    transform: translateY(-270%); 
+    margin-bottom: 20px; position: relative; 
+    right: 60px; 
+} 
+#row-birthdate{
+    color:#FEF2E4;
+    font-size: 20px; 
+    position: relative; 
+    bottom: 80px; 
+    right:60px;
+}
+
+#Home-address{
+    padding-left:45px; 
+    font-size: 20px; 
+    transform: translateY(-270%); 
+    margin-bottom: 20px; position: relative; 
+    right: 60px; 
+} 
+#row-Home-address{
+    color:#FEF2E4;
+    font-size: 20px; 
+    position: relative; 
+    bottom: 80px; 
+    right:60px;
+}
+
+
+#sub{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    transform: translateY(-350%);
+    right: 60px;
+    padding: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    color:#D1E1F9;
+    cursor: pointer;
+}
+
+#sub:hover{
+    background-color:green;
+}
+
+.reset{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    transform: translateY(-225%);
+    left: 160px;
+    padding: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    color:#D1E1F9;
+    cursor: pointer;
+}   
+
+.reset:hover{
+    background-color: darkkhaki;
+} 
+
+.avion-logo img{
+    position: relative;
+    bottom: 90px;
+    left: 460px;
+    cursor: pointer;
+}

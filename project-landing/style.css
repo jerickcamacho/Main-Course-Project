@@ -1,62 +1,102 @@
-    /*HEADER AND BODY*/
-     *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-body 
+/*HEADER AND BODY*/
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+   }
+body{font-family: montserrat; width: 100%; height: 100%;}
+   header, h1{font-family: monospace; text-align: right; font-weight: bold; font-size: 25px; padding: 0 100px; color: whitesmoke;}
+   h1, body, header{margin: 0;padding: 0;border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+
+   /* Navigation*/
+#nav-bar, .container
+{      
+width: 100%;
+height: 90px;
+overflow: auto; 
+display: flex;
+justify-content: space-around;
+list-style: none; 
+background-color: black; 
+position:fixed;
+top:0;
+left:0;
+
+}    
+#nav-bar , .container li
 {
-    background-position: center;
-    background-repeat: no-repeat;
+float: right;
+margin-right: 20px;
 }
-#back-color 
+#nav-bar li a 
 {
-    background-color: gray;
+color: whitesmoke;
+font-size: 12px;
+padding: 7px 13px;
+border-radius: 3px;
+text-transform: uppercase;
+}
+#nav-bar li 
+{
+display: inline-block;
+line-height: 80px;
+margin: 0 5px;
+}
+header h1.logo 
+{
+white-space: nowrap;  
+margin-top: 25px;
+font-size: 30px;
+margin-left: 150px;
+font-weight: bold;
+color: darkturquoise;
 }
 #nav-bar a:hover {
-    background-color:gray;
-  }
-#nav-bar 
-{
-    overflow: auto; 
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin-top: 40px;
-    margin-right: 170px;
-    margin-left: 200px;
-    margin-bottom: 50px;
-    padding-left: 10px;
-    border-radius: 10%;
-    background-color: black; 
-}   
-#nav-bar a
-{
-    text-decoration: none;
-    display: block;
-    margin: 0;
-    padding: 1em;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    float: left;
+background-color:gray;
 }
-    #header-img 
-    {
-        height: 250px;
-        padding-left: 200px;
+a.active, a:hover 
+{
+background-color: gray;
+transition: .5s;
+}
+#header-img 
+{
+margin-top: 20px;
+height: 40px;
+padding-left: 10px;
+position: relative;
+right: 680px;
+}
+/*HEADER Section END*/
+
+@media  (max-width: 952px) 
+{
+    .logo 
+    {  
+       font-size: 10px;
+       padding-left: 0px; 
+       
     }
-    #main-header 
+    #nav-bar li a 
     {
-        font-family: monospace;
-        text-align: right;
-        font-weight: bold;
-        font-size: 25px;
-        color: black;
+        font-size: 12px;
+    }
+    .logo 
+    {
+        font-size: 12px;
+    }
+    h1{ font-size: 12px; }
+}
+
+@media (max-width:375px)    
+    {
+        #nav-bar{justify-content: none;}
+
+        #header-img{width:40px; height:40px;}
+        .logo{margin-left: 0px;} 
     }
 
-    /*SECTION*/
-#video {width:350px; height:300px; overflow:hidden; position:relative; right: 490px; float:right;}
+/*SECTION*/
+#video { width:350px; height:300px; overflow:hidden; position:relative; transform: translateY(-120%); right: 490px; float:right;}
 #video img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;} 
 
 @keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
@@ -67,116 +107,143 @@ body
 
 /*FOOTER SECTION*/
 #about 
-    {
-        border: solid;
-        margin-top: 450px;
-        margin-right: 900px;
-        font-family: monospace;
-        text-align: center;
-    }
+{
+ border: solid;
+ margin-top: 450px;
+ margin-right: 900px;
+ font-family: monospace;
+ text-align: center;
+}
 #products
-    {
-        text-align: center;
-        border: solid;
-        position: relative;
-        bottom: 210px;
-        margin-left: 450px;
-        margin-right: 400px;
-        padding-bottom: 48px;
-    }
-    #contact header 
-    {
-      font-size: x-large;  
-      color: blanchedalmond;
-      font-weight: bold;
-      position: relative;
-      left: 650px;  
-      top: 65px;
-      margin-top: 450px; 
-    }
-   #name, #contact-number, #email 
-    {   
-        color: whitesmoke;
-        margin-bottom: 5px;
-        position: relative;
-        top: 60px
-    }
-    #form 
-    {
-        position: relative;
-        left: 450px;
-        border: solid;
-        border-style: solid;
-        border-radius: 5%;
-        border-color: firebrick;
-        padding-left: 130px;
-        margin-right: 900px;
-        margin-top: 20px;
-    }
-    #contact-number 
-    {
-        position: relative;
-        right: 70px;
-    }
-    #text-area 
-    {
-        font-family: Arial, Helvetica, sans-serif;
-        margin-left: 50px;
-        margin-top: 60px;
-        color: white;
-    }
-    #sub 
-    {   
-        margin-top: 10px;
-        margin-bottom: 5px;
-        position: relative;
-        left: 45px;
-        background-color: green;
-        color: whitesmoke;
-    }
-    #mycontact , .email .mynumber 
-    {  
-    font-size: x-large;    
-    color: whitesmoke;    
+{
+ text-align: center;
+ border: solid;
+ position: relative;
+ bottom: 210px;
+ margin-left: 450px;
+ margin-right: 400px;
+ padding-bottom: 48px;
+}
+
+#form header{color:black; font-size: 30px; font-weight: bold; text-align: center; transform: translateY(-320%);}
+#name{padding-left:45px; font-size: 20px; transform: translateY(-270%); margin-bottom: 20px; position: relative; right: 60px; } 
+#row-name{font-size: 20px; position: relative; bottom: 80px; right:60px;}
+
+#number{padding-left:45px; font-size: 20px; transform: translateY(-270%); margin-bottom: 20px; position: relative; right: 60px;}
+#row-number{font-size: 20px; position: relative; bottom: 80px; right:60px;}
+
+#email{padding-left:45px; font-size: 20px; transform: translateY(-270%); margin-bottom: 20px; position: relative; right: 60px;}
+#row-email{font-size: 20px; position: relative; bottom: 80px; right:60px;}
+
+#message{padding:30px; font-size: 20px; transform: translateY(-60%); margin-bottom: 20px; position: relative; right: 60px;}
+#row-message{color:black; font-size:20px; font-weight: bold; position: relative; bottom: 80px; right:60px;}
+
+#sub{margin-top: 5px;
+    margin-bottom: 5px;
     position: relative;
-    left: 500px;
-    margin: 20px;    
-    margin-top: 40px;
-    }
-    #mycontact img 
-    {
-        max-width: 20px;
-        margin-right:10px;
-    }
-    .telephone 
-    {
-        position: relative;
-        left: 35px;
-    }
-    #container 
-    {
-        background-color: black;
-    }
-    #foot 
-    {
-        background-color: black;
-        color: whitesmoke;
-        text-align: center;
-        position: relative;
-    }
-    #contact-header 
-    {
-        color: whitesmoke;
-        position: relative;
-        left: 600px;
-        margin-top: 20px;
-    }
-    #google-map 
-    {
-        position: static;
-        margin-left: 150px;
-    }
-    #address 
-    {
-        color: whitesmoke;
-    }
+    transform: translateY(-350%);
+    right: 20px;
+    padding: 5%;
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;}
+
+    #sub:hover {background-color:green;}
+
+.reset{margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    transform: translateY(-225%);
+    left:140px;
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;} 
+
+.reset:hover{background-color: darkkhaki;}    
+    
+#container {background-color: black; margin-top: 500px;}
+.container-footer{margin-top: 80px;}
+
+#contact header 
+{
+ font-size: x-large;  
+ color: darkturquoise;
+ font-weight: bold;
+ position: relative;
+ margin-left: 30px;
+ width: 50%;
+ top: 60px;
+ margin-top: 450px; 
+}
+
+
+#form{position: relative;
+    left: 450px;
+    background-color: burlywood;
+    transform: translateY(5%);
+    border: solid;
+    border-style: solid;
+    border-radius: 5%;
+    border-color: firebrick;
+    padding: 10%;
+    position: relative;
+    height: 600px;
+    padding-left: 130px;
+    margin-right: 900px;
+    margin-top: 70px;}
+    
+
+#mycontact , .email .mynumber 
+{  
+font-size: x-large;    
+color: whitesmoke;    
+position: relative;
+left: 500px;
+margin: 20px;    
+margin-top: 40px;
+}
+
+#mycontact img 
+{
+max-width: 20px;
+margin-right:10px;
+}
+.telephone 
+{
+position: relative;
+left: 35px;
+}
+
+#foot 
+{
+background-color: black;
+color: whitesmoke;
+text-align: center;
+position: relative;
+
+}
+#contact-header 
+{
+color: darkturquoise;
+position: relative;
+right: 630px;
+margin-top: 0px;
+font-size: 25px;
+font-weight: bold;
+transform: translateY(-90%);
+}
+#google-map 
+{
+position: static;
+margin-left: 150px;
+}
+#google-map h1 
+{
+transform: translateX(-92%);    
+color: darkturquoise;
+font-size: 25px;
+font-weight: bold;
+}
