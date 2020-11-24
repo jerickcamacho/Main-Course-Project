@@ -2,7 +2,7 @@
 
 // John and his family went on a holiday and went to 3 different restaurants. The bills were Php 1240, Php 480 and Php 2680.
 // To tip the waiter a fair amount, John created a simple tip calculator (as a function). He likes to tip 20% of the bill when the bill is less than Php 500, 15% 
-// when the bill is between Php 500 and Php 2000, and 10% if the bill is more than Php 2000.
+// when the bill is between Php 500 and Php 2000, and 10% if the bill is more than Php 2000. 
 // In the end, John would like to have 2 arrays:
 // 1. Containing all three tips (one for each bill)
 // 2. Containing all three final paid amounts (bill tip).
@@ -39,7 +39,7 @@ let tipTransaction = {
                 return "Upon calculation of tip"; 
             }
 
-			//  // Add two result of corresponding arrays 
+			// Add two result of corresponding arrays 
 			this.tipsForEach[i] = bill * percent;
 			this.finalBillTip[i] = bill + bill * percent;
 		}
@@ -60,4 +60,7 @@ let tipTransaction = {
     console.log(tipTransaction);
 
     tipTransaction["average"] = totalAverage(tipTransaction.tipsForEach);
-    console.log(tipTransaction);
+    console.log(tipTransaction); 
+
+
+    
